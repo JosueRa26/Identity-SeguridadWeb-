@@ -1,0 +1,22 @@
+﻿@page
+@using DemoIdentity.Identity.Account; 
+@model DemoIdentity.Pages.Account.LoginModel
+@{
+
+
+    <form method="post">
+
+        <div>
+            <label>Email</label>
+            <input asp-for="Login.Email" />
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input asp-for="Login.Password" type="password" />
+        </div>
+
+        <button type="submit"> Login</button>
+    </form>
+
+}
